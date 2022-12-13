@@ -249,7 +249,8 @@ background: linear-gradient(to right, #093637, #44A08D); " class="text-gray-200 
 
     <!--Contact-->
 
-    <form onsubmit="sendEmail(); reset(); return false;" id="contact" class="container px-5 py-24 mx-auto">
+    <form action="https://formspree.io/f/xjvznqoz"
+    method="POST" id="contact" class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-green-500">
           Contact
@@ -320,23 +321,21 @@ background: linear-gradient(to right, #093637, #44A08D); " class="text-gray-200 
     </form>
   </header>
 
-  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-  <!-- <script>
+  <script>
       function sendEmail(){
         Email.send({
-          Host : "smtp.gmail.com",
-          Username : "socialmedia.bb.yt@gmail.com",
-          Password : "Some1ssue9Happen5",
-          To : 'ayushbaral010@gmail.com',
-          From : "you@isp.com",
-          Subject : "This is the subject",
-          Body : "And this is the body"
-      }).then(
-        message => alert(message)
-      );
+    SecureToken : "50629c3a-f37b-4bd8-a636-d55e1a778faf",
+    To : 'sobkando@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
       }
-    </script> -->
+    </script>
 
   <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
