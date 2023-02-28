@@ -1,7 +1,13 @@
-### Procject Name : Resume-Website 🌐
 
------------------------------------
+# My Resume Site
 
-- 🧑‍💼 About :
+This is the website where you can learn more about my professional experience, skills, education, and achievements. As a front end developer, I have dedicated my career to full stack developer.
 
-This is the website a where I given all my knowledge in this website.
+
+
+
+## Live Website
+
+ [Run](https://2bycodec.github.io/Resume-Website/)
+
+
