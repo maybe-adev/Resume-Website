@@ -14,6 +14,6 @@ Overall, my resume website demonstrates my professionalism, dedication, and crea
 
 ## Live Website
 
- [Run](https://2bycodec.github.io/Resume-Website/)
+ [Run](https://cautcus.github.io/Resume-Website/)
 
 
