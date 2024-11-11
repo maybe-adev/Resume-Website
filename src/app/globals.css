@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Color Pallate 
+
+Background (Dark Charcoal Gray) - Use a dark, neutral gray (#1E1E1E) as the background color. It gives a sleek, modern look and allows the foreground colors to pop.
+Primary Foreground (Neon Mint) - For accents like buttons, icons, and headers, a vibrant neon mint (#00FFA3) adds an eye-catching pop.
+
+Text (Off-White or Light Gray) - For clean readability, go with a soft off-white (#EAEAEA) or light gray (#CCCCCC) for the main text.
+
+Secondary Accent (Electric Blue) - Use an electric blue (#0096FF), such as links or call-to-action buttons.
+
+Button Hover (Slate Gray) - A slate gray (#2C2C2C) button hover color.*/
+
+:root {
+  --background: #1e1e1e;
+  --foreground: #00ffa3;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
