@@ -118,7 +118,7 @@ export function PostGrid() {
       </AnimatePresence>
       <ul className="max-w-2xl mx-auto w-full gap-4">
         <div className="flex flex-col space-y-4">
-        {cards.map((card, index) => (
+        {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
@@ -222,7 +222,7 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Romantic",
+    description: "Shyness",
     mood: "romo",
     title: "Sharm-o-Haya",
     src: "https://images.unsplash.com/photo-1568781269551-3e3baf5ec909?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -251,7 +251,7 @@ const cards = [
     },
   },
   {
-    description: "Sad",
+    description: "Questioning",
     mood: "sad",
     title: "Abh Kyun Likhu",
     src: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
