@@ -12,6 +12,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { useRouter } from 'next/navigation'
  
 export const FloatingDock = ({
   items,
@@ -38,6 +39,7 @@ const FloatingDockMobile = ({
   className?: string;
 }) => {
   const [open, setOpen] = useState(false);
+  const router = useRouter()
   return (
     <div className={cn("relative block md:hidden", className)}>
       <AnimatePresence>
@@ -63,13 +65,13 @@ const FloatingDockMobile = ({
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
-                <Link
-                  href={item.href}
+                <button
+                onClick={() => router.push(`{item.href}`)}
                   key={item.title}
                   className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
-                </Link>
+                </button>
               </motion.div>
             ))}
           </motion.div>

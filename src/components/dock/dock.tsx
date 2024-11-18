@@ -8,25 +8,34 @@ import {
   IconBrandInstagram,
   IconHome,
   IconSitemap,
+  IconBook2,
   IconBrandLinkedin
 } from "@tabler/icons-react";
-import Image from "next/image";
+
 
 export function Dock() {
+
   const links = [
     {
       title: "Home",
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "/",
+      href: `/`,
     },
     {
       title: "Projects",
       icon: (
         <IconSitemap className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/project",
+    },
+    {
+      title: "Poeta",
+      icon: (
+        <IconBook2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "/poeta",
     },
     {
         title: "Components",
