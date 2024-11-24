@@ -1,4 +1,8 @@
-"use client";
+/**
+ * Note: Use position fixed according to your needs
+ * Desktop navbar is better positioned at the bottom
+ * Mobile navbar is better positioned at bottom right.
+ **/
 
 import { cn } from "@/lib/utils";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
@@ -12,8 +16,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
-import { useRouter } from 'next/navigation'
- 
+
 export const FloatingDock = ({
   items,
   desktopClassName,
@@ -30,7 +33,7 @@ export const FloatingDock = ({
     </>
   );
 };
- 
+
 const FloatingDockMobile = ({
   items,
   className,
@@ -39,7 +42,6 @@ const FloatingDockMobile = ({
   className?: string;
 }) => {
   const [open, setOpen] = useState(false);
-  const router = useRouter()
   return (
     <div className={cn("relative block md:hidden", className)}>
       <AnimatePresence>
@@ -65,13 +67,13 @@ const FloatingDockMobile = ({
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
-                <button
-                onClick={() => router.push(`{item.href}`)}
+                <Link
+                  href={item.href}
                   key={item.title}
                   className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
-                </button>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
@@ -86,7 +88,7 @@ const FloatingDockMobile = ({
     </div>
   );
 };
- 
+
 const FloatingDockDesktop = ({
   items,
   className,
@@ -94,7 +96,7 @@ const FloatingDockDesktop = ({
   items: { title: string; icon: React.ReactNode; href: string }[];
   className?: string;
 }) => {
-  const mouseX = useMotionValue(Infinity);
+  let mouseX = useMotionValue(Infinity);
   return (
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
@@ -110,7 +112,7 @@ const FloatingDockDesktop = ({
     </motion.div>
   );
 };
- 
+
 function IconContainer({
   mouseX,
   title,
@@ -122,48 +124,48 @@ function IconContainer({
   icon: React.ReactNode;
   href: string;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
- 
-  const distance = useTransform(mouseX, (val) => {
-    const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
- 
+  let ref = useRef<HTMLDivElement>(null);
+
+  let distance = useTransform(mouseX, (val) => {
+    let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
+
     return val - bounds.x - bounds.width / 2;
   });
- 
-  const widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-  const heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
- 
-  const widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
-  const heightTransformIcon = useTransform(
+
+  let widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+  let heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+
+  let widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
+  let heightTransformIcon = useTransform(
     distance,
     [-150, 0, 150],
     [20, 40, 20]
   );
- 
-  const width = useSpring(widthTransform, {
+
+  let width = useSpring(widthTransform, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
-  const height = useSpring(heightTransform, {
+  let height = useSpring(heightTransform, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
- 
-  const widthIcon = useSpring(widthTransformIcon, {
+
+  let widthIcon = useSpring(widthTransformIcon, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
-  const heightIcon = useSpring(heightTransformIcon, {
+  let heightIcon = useSpring(heightTransformIcon, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
- 
+
   const [hovered, setHovered] = useState(false);
- 
+
   return (
     <Link href={href}>
       <motion.div
