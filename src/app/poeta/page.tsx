@@ -6,7 +6,7 @@ const words = `Words That Work, Verses That Wander`;
 
 export default function Poeta(){
     return (
-        <div>
+        <div className="pb-20">
             <TextGenerateEffect className="text-4xl md:text-4xl lg:text-6xl font-bold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6" words={words} />;
             <PostGrid/>
             <Dock/>
