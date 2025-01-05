@@ -16,7 +16,7 @@ export function Background() {
                     Front-end Web Developer with 4 years of experience in building beautiful and modern frameworks. Passionate about design, exploring new techniques, and contributing to open-source projects.
                 </p>
                 <Link
-                    href="https://drive.google.com/file/d/1K6eAR9FbJETDyf2_OEFm6IK0t3dVcfUj/view"
+                    href="https://drive.google.com/file/d/1awDiLh6AQCuyDiWv56a7p9rCTCTnh2Vy/view?usp=drive_link"
                     target="_blank"
                     className="relative z-50 bg-black dark:bg-white rounded-full text-white dark:text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 mt-4 sm:mt-6 lg:mt-8"
                 >
