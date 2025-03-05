@@ -42,28 +42,28 @@ export function Dock() {
         icon: (
           <IconBrandLinkedin  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
-        href: "https://www.linkedin.com/in/cautcus/",
+        href: "www.linkedin.com/in/ayuvify",
       },
     {
       title: "Instagram",   
       icon: (
         <IconBrandInstagram  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://www.instagram.com/cautcus/",
+      href: "https://www.instagram.com/ayuvify/",
     },
     {
       title: "Twitter",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://x.com/cautcus",
+      href: "https://x.com/ayuvify",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500" />
       ),
-      href: "https://github.com/cautcus",
+      href: "https://github.com/ayuvify",
     },
   ];
 
