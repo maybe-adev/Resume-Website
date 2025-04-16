@@ -26,14 +26,18 @@ export default function Home() {
         <Preloader />
       ) : (
         <>
-          <Background words={["Ayush Baral", "Web Developer", "Tech Nerd", "Learner"]} />
+          <Background
+            words={["Ayush Baral", "Web Developer", "Tech Nerd", "Learner"]}
+          />
           <Dock />
-            <button
+          <button
             onClick={handleBuyMeACoffee}
-            className="absolute bottom-5 right-5 bg-yellow-500 text-gray-900 px-4 py-2 rounded shadow hover:bg-yellow-600 transition"
-            >
-            🍚 Buy Me a Rosogolla
-            </button>
+            className="fixed z-10 bottom-5 right-5 bg-yellow-500 text-gray-900 w-10 h-10 rounded-full p-0 flex items-center justify-center shadow hover:bg-yellow-600 transition
+             sm:w-auto sm:h-auto sm:rounded-lg sm:px-4 sm:py-2"
+          >
+            <span className="block sm:hidden">🍚</span>
+            <span className="hidden sm:inline">🍚 Buy Me a Rosogolla</span>
+          </button>
         </>
       )}
     </div>

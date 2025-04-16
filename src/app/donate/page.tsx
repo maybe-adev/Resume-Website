@@ -32,14 +32,14 @@ const BuyMeACoffee: React.FC = () => {
         <p className="text-xl font-semibold">
           GPay ID: <span className="text-blue-500" id="gpay-id">ayushbaral010-1@oksbi</span>
         </p>
-        {/* <div className="mt-4">
+        <div className="mt-4">
           <img
-        src="/path-to-your-qr-code.png"
+        src="/qr-code.jpg"
         alt="GPay QR Code"
         className="w-40 h-40 mx-auto"
         id="gpay-qr-code"
           />
-        </div> */}
+        </div>
       </div>
     </div>
     </BackgroundLines>
