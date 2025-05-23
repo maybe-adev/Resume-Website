@@ -37,26 +37,26 @@ export function Dock() {
       ),
       href: "/poeta",
     },
-    {
-        title: "LinkedIn",
-        icon: (
-          <IconBrandLinkedin  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ),
-        href: "www.linkedin.com/in/ayuvify",
-      },
-    {
-      title: "Instagram",   
-      icon: (
-        <IconBrandInstagram  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "https://www.instagram.com/ayuvify/",
-    },
+    // {
+    //     title: "LinkedIn",
+    //     icon: (
+    //       <IconBrandLinkedin  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //     ),
+    //     href: "www.linkedin.com/in/ayuvify",
+    //   },
+    // {
+    //   title: "Instagram",   
+    //   icon: (
+    //     <IconBrandInstagram  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //   ),
+    //   href: "https://www.instagram.com/ayuvify/",
+    // },
     {
       title: "Twitter",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://x.com/ayuvify",
+      href: "https://x.com/maybeadev",
     },
     {
       title: "GitHub",
