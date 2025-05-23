@@ -22,12 +22,6 @@ export function Slider() {
       redirect: "https://ayuvify.github.io/GIF.gen/",
       pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu738w02z1_mHNHGDfoigI5D-0NhKSkK5LDA&s",
     },
-    {
-      name: "Chat App",
-      quote:"A modern platform for seamless real-time communication with intuitive design and responsive layouts.",
-      redirect: "https://kotha-ebon.vercel.app/",
-      pic: "https://images.unsplash.com/photo-1604881989793-466aca8dd319?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;
 }
