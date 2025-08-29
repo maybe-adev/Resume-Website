@@ -37,20 +37,20 @@ export function Dock() {
       ),
       href: "/poeta",
     },
-    // {
-    //     title: "LinkedIn",
-    //     icon: (
-    //       <IconBrandLinkedin  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    //     ),
-    //     href: "www.linkedin.com/in/ayuvify",
-    //   },
-    // {
-    //   title: "Instagram",   
-    //   icon: (
-    //     <IconBrandInstagram  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    //   ),
-    //   href: "https://www.instagram.com/ayuvify/",
-    // },
+    {
+        title: "LinkedIn",
+        icon: (
+          <IconBrandLinkedin  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        ),
+        href: "www.linkedin.com/in/maybeadev",
+      },
+    {
+      title: "Instagram",   
+      icon: (
+        <IconBrandInstagram  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://www.instagram.com/maybeadev/",
+    },
     {
       title: "Twitter",
       icon: (
@@ -63,7 +63,7 @@ export function Dock() {
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500" />
       ),
-      href: "https://github.com/ayuvify",
+      href: "https://github.com/maybe-adev",
     },
   ];
 

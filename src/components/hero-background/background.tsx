@@ -15,10 +15,10 @@ export function Background({ words }: BackgroundProps) {
                 Hello World, <br />I am <FlipWords words={words} />
             </h2>
                 <p className="max-w-lg sm:max-w-xl mx-auto text-xs sm:text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center pb-2 sm:pb-4 md:pb-6">
-                    Front-end Web Developer with 4 years of experience in building beautiful and modern frameworks. Passionate about design, exploring new techniques, and contributing to open-source projects.
+                    Front-end Web Developer with 5 years of experience in building beautiful and modern frameworks. Passionate about design, exploring new techniques, and contributing to open-source projects.
                 </p>
                 <Link
-                    href="https://drive.google.com/file/d/1awDiLh6AQCuyDiWv56a7p9rCTCTnh2Vy/view?usp=drive_link"
+                    href="https://drive.google.com/drive/folders/1vPiTMmT0BraHHbSpEJfOmuz50IwLLd5y?usp=drive_link"
                     target="_blank"
                     className="relative z-50 bg-black dark:bg-white rounded-full text-white dark:text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 mt-4 sm:mt-6 lg:mt-8"
                 >
